@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-image: linear-gradient(to left, #004CBF, #8DC7EE );
+    font-size: $fontSize;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1b262c;
+    a{
+        text-decoration: none;
+        color: #1b262c;
+    }
+}
+
+.titulo__seccion{
+    font-variant: small-caps;
+    text-decoration: underline;
+    font-size: $fontSize*2;
+    margin: 15px -15px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px #051b2fdb;
+    font-weight: bold;
+}
+
+#arrow img {
+    width: 55px;
+    position: fixed;
+    top: 620px;
+    right: 55px;
+}
+
+@mixin bordes($ancho, $estado, $color, $radio){
+    border: $ancho $estado $color;
+    border-radius: $radio;
+}

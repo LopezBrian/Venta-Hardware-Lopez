@@ -1,0 +1,67 @@
+.componentes{
+    ul{
+        li{
+            &:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 1.5px;
+            }
+        }
+        h3{
+            font-size: $fontSize;
+            font-weight: bold;
+        }
+    }
+}
+
+.recomendados{
+    background-color: $colorClaro;
+    box-shadow: 10px 10px #051b2fdb;
+    @include bordes(4px, solid, $colorOscuro, 0px); 
+}
+
+.componentes{
+    @extend .recomendados;
+}
+
+.recomendados__imagen {
+    width: 150px;
+    height: 150px;
+    @include bordes(2px, solid, $colorOscuro, 0);
+        &:hover{
+            animation: escalar 0.6s;
+            animation-fill-mode: forwards;            
+        }
+}
+
+@keyframes escalar {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+.recomendados__item{
+    padding: 0;
+    h3{
+        font-weight: bold;
+        margin: 10px;
+        font-size: $fontSize;
+        text-align: center;
+    }
+    a:hover{
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
+        color: $colorOscuro;
+    }
+}
+
+@media screen and (min-width: 992px) {      
+    .main__div{
+        display: flex;
+    }
+    .componentes{
+        height: 350px;
+    }
+}

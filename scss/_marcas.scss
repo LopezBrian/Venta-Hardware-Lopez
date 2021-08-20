@@ -1,0 +1,39 @@
+.marcas {
+	display: flex;
+	flex-direction: column;
+	margin: 50px auto;
+	text-align: center;
+}
+.marcas__titulo {
+	text-align: center;
+}
+.marcas__logos {
+	display: flex;
+	justify-content: space-around;
+    height: $maxHeight;	
+	img {
+		width: 280px;
+		background-color: $colorClaro;
+		@include bordes(4px, solid, $colorOscuro, 0);
+		padding: 10px;
+		box-shadow: 10px 10px #051b2fdb;
+		&:hover {
+			animation: rotar 2s;
+		}
+	}
+}
+
+@keyframes rotar {
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+
+@media screen and (max-width:576px) {
+    .marcas__logos{
+        height: $maxHeight*2;
+    }    
+}

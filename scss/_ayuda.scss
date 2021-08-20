@@ -1,0 +1,13 @@
+.ayuda{
+    h3{
+        border-top: 2px solid $colorOscuro;
+        border-bottom: 2px solid $colorOscuro;
+        padding: 10px 20px;
+    }
+    ul {
+        li{
+            padding: 5px 15px;
+            margin: 10px;
+        }
+    }
+}
