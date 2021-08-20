@@ -50,20 +50,88 @@
             <div class="container-fluid row main__div mt-2 mb-2">
                 <div class="container-fluid col-lg-4 mx-auto mt-2 mb-2">
                     <section class="componentes"><!-- Primera seccion -->
-                        <div class="container">
+                        <div class="container d-flex flex-column">
                             <div class="container">
                                 <h1 class="titulo__seccion">Componentes</h1>
-                            </div>                
-                            <ul><!-- Cada categoria deberia desplegar un arbol de items -->                            
-                                <li><h3>Unidades de almacenamiento</h3></li>
-                                <li><h3>Placas de video</h3></li>
-                                <li><h3>Memorias ram</h3></li>
-                                <li><h3>Procesadores</h3></li>
-                                <li><h3>Motherboards</h3></li>
-                                <li><h3>Gabinetes</h3></li>
-                                <li><h3>Perifericos</h3></li>
-                                <li><h3>Monitores</h3></li>
-                            </ul>
+                            </div>                             
+                            <div class="container d-flex flex-column align-items-center mx-auto componentes__lista">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Almacenamiento
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>Discos Rígidos Externos</li>
+                                        <li>Discos Sólidos SSD</li>
+                                        <li>Discos Rígidos Internos</li>
+                                    </ul>
+                                </div> 
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Placas de Video
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>Nvidia GeForce</li>
+                                        <li>Radeon AMD</li>
+                                    </ul>
+                                </div> 
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Memorias RAM
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>Memorias DDR4</li>
+                                        <li>Memorias SODIMM</li>
+                                    </ul>
+                                </div> 
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Procesadores
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>AMD</li>
+                                        <li>Intel</li>
+                                    </ul>
+                                </div> 
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Motherboards
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>Mothers AMD</li>
+                                        <li>Mothers Intel</li>
+                                    </ul>
+                                </div> 
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Gabinetes
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>Gabinetes</li>
+                                        <li>Coolers</li>
+                                        <li>Fuentes de alimentación</li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Periféricos
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>Teclados</li>
+                                        <li>Mouses</li>
+                                        <li>Parlantes</li>
+                                        <li>Auriculares</li>
+                                    </ul>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Monitores
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>Monitores</li>
+                                        <li>Soportes para monitores</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -108,7 +176,7 @@
                     </section>
                 </div>
             </div>
-            <a id="arrow" href="./index.html#top"><img src="./images/up-arrow.png" alt="arrow"></a>
+            <a id="arrow" href="#top"><img src="./images/up-arrow.png" alt="arrow"></a>
         </main>
         <footer><!-- Inicio FOOTER -->
             <!-- Redes --> 
@@ -137,7 +205,7 @@
                 </div>
                 <div class="modal-body">
                     <section class="login">
-                        <form action="">                                           
+                        <form action="">                                            
                             <div class="d-flex flex-column">
                                 <label for="email">Usuario:</label>
                                 <input type="email" name="email" placeholder="usuario@correo.com" required>

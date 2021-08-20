@@ -218,14 +218,32 @@ header ul.navbar-nav {
   }
 }
 
-.componentes ul li:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
+.componentes div {
+  width: 80%;
 }
 
-.componentes ul h3 {
-  font-size: 1rem;
+.componentes .componentes__lista {
+  padding: 5px;
+  width: 90%;
+}
+
+.componentes .componentes__lista div {
+  padding: 3px;
+}
+
+.componentes .componentes__lista div li {
+  padding: 0 10px;
+}
+
+.componentes .componentes__lista div button {
+  background-color: #BBE1FAC4;
+  color: #0B2845;
   font-weight: bold;
+}
+
+.componentes .componentes__lista div button:hover {
+  background-color: #0B2845;
+  color: #BBE1FAC4;
 }
 
 .recomendados, .componentes {
@@ -295,8 +313,21 @@ header ul.navbar-nav {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+@media screen and (max-width: 576px) {
+  .main__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .componentes {
-    height: 350px;
+    width: auto;
+  }
+  .componentes div {
+    width: 98%;
+    padding: 0;
+    margin: 0;
   }
 }
 
