@@ -522,25 +522,18 @@ header ul.navbar-nav {
   font-weight: bold;
 }
 
-form * {
-  color: #1b262c;
-}
-
-form fieldset {
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #BBE1FAC4;
   border: 2px solid #0B2845;
   border-radius: 7px;
   padding: 10px;
-  -webkit-box-shadow: 10px 10px #051b2fdb;
-          box-shadow: 10px 10px #051b2fdb;
-}
-
-form legend {
-  background-color: #1b262c;
-  color: #BBE1FAC4;
-  border: 2px solid #0B2845;
-  border-radius: 7px;
-  padding: 5px;
 }
 
 form label {
@@ -550,7 +543,7 @@ form label {
 }
 
 form input {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .contacto__opciones {

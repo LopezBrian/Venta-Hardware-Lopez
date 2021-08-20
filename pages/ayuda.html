@@ -15,25 +15,29 @@
         <header><!-- Inicio HEADER -->
             <nav class="navbar navbar-expand-md navbar-dark">            
                 <div class="container-fluid">
-                    <a href="../index.html" class="navbar-brand"><img src="../images/logo2.png" alt="Logo"></a>
+                    <a href="index.html" class="navbar-brand"><img src="../images/logo2.png" alt="Logo"></a>
                     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="navbar-collapse collapse justify-content-around" id="navbarCollapse">
-                        <ul class="navbar-nav mr-auto"><!-- Barra de navegacion -->
+                        <ul class="navbar-nav mr-auto align-items-center"><!-- Barra de navegacion -->
                             <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
                             <li class="nav-item"><a href="./productos.html" class="nav-link">Productos</a></li>
                             <li class="nav-item"><a href="./marcas.html" class="nav-link">Marcas</a></li>
                             <li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
                             <li class="nav-item"><a href="./ayuda.html" class="nav-link active">Ayuda</a></li>
                         </ul>
-                        <div class="row  justify-content-around align-items-center"><!-- Barra de busqueda -->
-                            <div class="col-8">
-                                <input id="buscar" class="form-control me-2" type="text" placeholder="Buscar...">
+                        <div id="header__busqueda" class="row justify-content-around align-items-center"><!-- Barra de busqueda -->
+                            <div class="container">
+                                <input id="buscar" class="form-control" type="text" placeholder="Buscar...">
                             </div>
-                            <div class="col-4" id="header__boton">
+                            <div class="d-flex justify-content-center" id="header__boton">
                                 <button type="button" onclick="alert('En construccion, proximamente funcionando')">Buscar</button>
                             </div>
+                        </div>
+                        <div class="botones__modal d-flex flex-column justify-content-center align-items-center"><!-- Activar modal -->                         
+                            <button type="button" class="modal__login btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-login">Ingresar</button>
+                            <button type="button" class="modal__signin btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-signin">Registrarse</button>
                         </div>
                     </div>
                 </div>            
@@ -74,8 +78,93 @@
                 <h6><a href="politicas.html">Políticas de privacidad</a></h6>
             </div>
         </footer>
+        <!-- Modal login-->
+        <div class="modal" id="modal-login" tabindex="-1" aria-labelledby="Ingresar" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="Ingresar">Ingresar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section class="login">
+                        <form action="">    <!-- Este formulario deberia estar en la pagina de inicio como un popup -->                                                  
+                            <div class="d-flex flex-column">
+                                <label for="email">Usuario:</label>
+                                <input type="email" name="email" placeholder="usuario@correo.com" required>
+                                <label for="contraseña">Contraseña:</label>
+                                <input type="password" name="contraseña" placeholder="**********" required> 
+                            </div>                       
+                            <div class="form__botones d-flex justify-content-center">
+                                <input class="mt-2 mx-2" type="submit" value="Ingresar">                
+                                <input class="mt-2 mx-2" type="reset" value="Borrar">
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Modal signin -->
+        <div class="modal" id="modal-signin" tabindex="-1" aria-labelledby="Registrarse" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="Registrarse">Registrar</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section class="signin">    
+                        <form action="">    <!-- Este formulario deberia estar en la pagina de inicio como un popup -->                            
+                            <div class="d-flex flex-column">
+                                <label for="user">Nombre de usuario:</label>
+                                <input type="text" name="user" placeholder="Nombre Apellido" required>
+            
+                                <label for="email">Correo:</label>
+                                <input type="email" name="email" placeholder="usuario@correo.com" required>
+            
+                                <label for="contraseña">Contraseña:</label>
+                                <input type="password" name="contraseña" placeholder="**********" required>
+            
+                                <label for="contraseña2">Repetir contraseña:</label>
+                                <input type="password" name="contraseña2" placeholder="**********" required>
+            
+                                <label for="telefono">Telefono:</label>
+                                <input type="text" name="telefono" placeholder="00000000" required>
+            
+                                <label for="direccion">Dirección:</label>
+                                <input type="text" name="direccion" placeholder="Calle 123" required>
+            
+                                <label for="ubicacion">Ubicacion:</label>
+                                <select name="ubicacion" required>
+                                    <option value="gba">Gran Buenos Aires</option>
+                                    <option value="caba" selected>Capital</option>
+                                    <option value="interior">Interior del pais</option>
+                                    <option value="extranjero">Extranjero</option>
+                                </select>
+                            </div>
+        
+                            <div class="form__botones d-flex justify-content-center">
+                                <input class="mt-2 mx-2" type="submit" value="Enviar">
+                                <input class="mt-2 mx-2" type="reset" value="Borrar">
+                            </div>
+                        </form>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </body>
 </html>

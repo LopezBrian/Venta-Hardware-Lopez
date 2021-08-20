@@ -15,36 +15,29 @@
 }
 
 form {
-	* {
-		color: #1b262c;
-	}
-	fieldset {
-		background-color: $colorClaro;
-		@include bordes(2px, solid, $colorOscuro, 7px);
-		padding: 10px;
-		box-shadow: 10px 10px #051b2fdb;
-	}
-	legend {
-		background-color: #1b262c;
-		color: $colorClaro;
-		@include bordes(2px, solid, $colorOscuro, 7px);
-		padding: 5px;
-	}
+	display: flex;
+	flex-direction: column;
+	background-color: $colorClaro;
+	@include bordes(2px, solid, $colorOscuro, 7px);
+	padding: 10px;
+	
 	label {
 		display: inline-block;
 		text-align: center;
 		margin: 5px;
 	}
 	input{
-		font-weight: bold;
-	}
+		font-weight: normal;
+	}	
 }
+
 .contacto__opciones {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
 }
+
 .contacto__botones {
 	margin:auto
 }
