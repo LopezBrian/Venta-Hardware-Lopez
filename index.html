@@ -28,16 +28,16 @@
                             <li class="nav-item"><a href="./pages/ayuda.html" class="nav-link">Ayuda</a></li>
                         </ul>
                         <div id="header__busqueda" class="row justify-content-around align-items-center"><!-- Barra de busqueda -->
-                            <div>
-                                <input id="buscar" class="form-control me-2" type="text" placeholder="Buscar...">
+                            <div class="container">
+                                <input id="buscar" class="form-control" type="text" placeholder="Buscar...">
                             </div>
                             <div class="d-flex justify-content-center" id="header__boton">
                                 <button type="button" onclick="alert('En construccion, proximamente funcionando')">Buscar</button>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-center"><!-- Activar modal -->                         
-                            <button type="button" id="modal__login" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-login">Ingresar</button>
-                            <button type="button" id="modal__signin" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-signin">Registrarse</button>
+                        <div class="botones__modal d-flex flex-column justify-content-center align-items-center"><!-- Activar modal -->                         
+                            <button type="button" class="modal__login btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-login">Ingresar</button>
+                            <button type="button" class="modal__signin btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-signin">Registrarse</button>
                         </div>
                     </div>
                 </div>            

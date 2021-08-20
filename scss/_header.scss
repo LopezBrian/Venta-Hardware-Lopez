@@ -54,7 +54,7 @@ header{
 }
 
 #header__boton{
-    margin: 10px;
+    margin: 10px 0;
 }
 
 #header__boton button{
@@ -81,7 +81,7 @@ header{
     @include bordes(2px, solid, $colorOscuro, 7px);
 }
 
-#modal__login{
+.modal__login{
     @include bordes(2px, solid, $colorOscuro, 7px);
     width: 150px;
     background: $colorClaro;
@@ -95,7 +95,7 @@ header{
     }
 }
 
-#modal__signin{
+.modal__signin{
     @include bordes(2px, solid, $colorOscuro, 7px);
     width: 150px;
     background: $colorClaro;
@@ -130,7 +130,24 @@ header{
     }
     #header__boton{
         button{
-            width: 70%;
+            width: 85px;
+            font-size: 14px;
+        }
+    }
+    #navbarCollapse{
+        .navbar-nav{
+            padding: 0;
+            margin: 0;
+            .nav-item{
+                font-size: 14px;
+            }
+        }
+    }
+    .botones__modal{
+        button{
+            width: 108px;
+            font-size: 14px;
+            margin: 7px 4px;
         }
     }
 }

@@ -108,7 +108,7 @@ header ul.navbar-nav {
 }
 
 #header__boton {
-  margin: 10px;
+  margin: 10px 0;
 }
 
 #header__boton button {
@@ -138,7 +138,7 @@ header ul.navbar-nav {
   border-radius: 7px;
 }
 
-#modal__login {
+.modal__login {
   border: 2px solid #0B2845;
   border-radius: 7px;
   width: 150px;
@@ -149,12 +149,12 @@ header ul.navbar-nav {
   margin: 8px;
 }
 
-#modal__login:hover {
+.modal__login:hover {
   background-color: #0B2845;
   color: #BBE1FAC4;
 }
 
-#modal__signin {
+.modal__signin {
   border: 2px solid #0B2845;
   border-radius: 7px;
   width: 150px;
@@ -165,7 +165,7 @@ header ul.navbar-nav {
   margin: 8px;
 }
 
-#modal__signin:hover {
+.modal__signin:hover {
   background-color: #0B2845;
   color: #BBE1FAC4;
 }
@@ -182,7 +182,20 @@ header ul.navbar-nav {
     margin: 0;
   }
   #header__boton button {
-    width: 70%;
+    width: 85px;
+    font-size: 14px;
+  }
+  #navbarCollapse .navbar-nav {
+    padding: 0;
+    margin: 0;
+  }
+  #navbarCollapse .navbar-nav .nav-item {
+    font-size: 14px;
+  }
+  .botones__modal button {
+    width: 108px;
+    font-size: 14px;
+    margin: 7px 4px;
   }
 }
 
