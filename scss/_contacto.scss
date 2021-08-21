@@ -41,9 +41,24 @@ form {
 	margin:auto
 }
 
+.contacto__info{
+	padding: 15px;
+	h4{
+		font-weight: bold;
+	}
+	ul{
+		li{
+			padding: 10px;
+		}
+	}
+}
+
+
+/* MEDIA QUERIES */
 @media screen and (max-width:576px) {
     .contacto{
 		form{
+			margin: auto;
 			width: 90%;
 			input{
 				width: 100%;
@@ -66,12 +81,16 @@ form {
 				}
 			}
 		}
+		.container{
+			flex-direction: column;
+		}
 	} 
 }
 
 @media screen and (min-width:577px) and (max-width:768px) {
     .contacto{
 		form{
+			margin: auto;
 			width: 90%;
 			.contacto__botones{
 				input{
@@ -79,7 +98,10 @@ form {
 					margin: 2px auto;
 				}
 			}
-		}   
+		}
+		.container{
+			flex-direction: column;
+		} 
 	} 
 }
 

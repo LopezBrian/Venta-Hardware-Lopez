@@ -34,7 +34,7 @@ body a {
 #arrow img {
   width: 55px;
   position: fixed;
-  top: 610px;
+  top: 530px;
   right: 80px;
 }
 
@@ -613,8 +613,22 @@ form input {
   margin: auto;
 }
 
+.contacto__info {
+  padding: 15px;
+}
+
+.contacto__info h4 {
+  font-weight: bold;
+}
+
+.contacto__info ul li {
+  padding: 10px;
+}
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 576px) {
   .contacto form {
+    margin: auto;
     width: 90%;
   }
   .contacto form input {
@@ -641,15 +655,28 @@ form input {
   .contacto form .contacto__botones input {
     width: 40%;
   }
+  .contacto .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
   .contacto form {
+    margin: auto;
     width: 90%;
   }
   .contacto form .contacto__botones input {
     width: 100%;
     margin: 2px auto;
+  }
+  .contacto .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -674,14 +701,13 @@ form input {
 }
 
 footer {
-  height: 100px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  border-top: 3px solid #1b262c;
+  border-top: 3px solid #BBE1FAC4;
   border-bottom: 3px solid #1b262c;
-  background-color: #BBE1FAC4;
+  background-color: #0B2845;
   margin-bottom: 5px;
 }
 
@@ -693,38 +719,10 @@ footer {
 .footer__titulo {
   margin-top: 15px;
   text-decoration: underline;
-  color: #1b262c;
+  color: #BBE1FAC4;
   font-size: 1rem;
   margin: 10px;
   font-weight: bold;
-}
-
-.footer__links {
-  -ms-flex-item-align: center;
-      align-self: center;
-  justify-self: center;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  font-size: 2rem;
-}
-
-.footer__links h6 {
-  font-weight: bold;
-}
-
-.footer__links a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  color: #0B2845;
 }
 
 .footer__social {
