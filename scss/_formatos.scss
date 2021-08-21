@@ -28,11 +28,13 @@ body{
     font-weight: bold;
 }
 
-#arrow img {
-    width: 55px;
-    position: fixed;
-    top: 620px;
-    right: 55px;
+#arrow{
+    img {
+        width: 55px;
+        position: fixed;
+        top: 610px;
+        right: 80px;
+    }
 }
 
 @mixin bordes($ancho, $estado, $color, $radio){

@@ -4,7 +4,7 @@ footer{
     grid-template-columns: 1fr 1fr;
     border-top: 3px solid #1b262c;
     border-bottom: 3px solid #1b262c;
-    background-color: #BBE1FAC4;
+    background-color: $colorClaro;
     margin-bottom: 5px;
 }
 
@@ -35,10 +35,14 @@ footer{
         }
 }
 
-.footer__links a:hover{
-    text-decoration: underline;
-    text-decoration-thickness:1.5px;
-    color: $colorOscuro;
+.footer__links{
+    a{
+        &:hover{
+            text-decoration: underline;
+            text-decoration-thickness:1.5px;
+            color: $colorOscuro;
+        }
+    }
 }
 
 .footer__social{    

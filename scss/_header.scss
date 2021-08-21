@@ -12,9 +12,11 @@ header{
     position: sticky;
     top: 0px;
     z-index: 999;
-    ul.navbar-nav{
-        padding: 5px;
-        margin: 5px;  
+    ul{
+        &.navbar-nav{
+            padding: 5px;
+            margin: 5px;  
+        }
     }
 }
 
@@ -34,40 +36,23 @@ header{
     @include bordes(2px, solid, $colorOscuro, 7px);
 }
 
-.header__login{
-    padding: 3px;
-    display: flex;
-    flex-direction: column;
-    height: 85px;
-    justify-content: space-evenly;
-    a{
-        padding: 3px;
-        background-color: #BBE1FA;
-        color: #1b262c;
-        text-align: center;
-        :hover{
-            padding: 3px;
-            background-color: #1b262c;
-            color: #BBE1FA;
-        }
-    }
-}
-
 #header__boton{
     margin: 10px 0;
 }
 
-#header__boton button{
-    background: $colorClaro;
-    color: #1b262c;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 3px;
-    width: 25%;
-    @include bordes(2px, solid, $colorOscuro, 7px);
-    &:hover{
-        background-color: $colorOscuro;
-        color: $colorClaro;
+#header__boton{
+    button{
+        background: $colorClaro;
+        color: #1b262c;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 3px;
+        width: 30%;
+        @include bordes(2px, solid, $colorOscuro, 7px);
+        &:hover{
+            background-color: $colorOscuro;
+            color: $colorClaro;
+        }
     }
 }
 
@@ -108,9 +93,6 @@ header{
         color: $colorClaro;
     }
 }
-
-
-
 /* MEDIA QUERIES */
 @media screen and (max-width:576px) {
     header{

@@ -43,6 +43,17 @@
         }
 }
 
+/* .carousel-item.active{
+    img{width: 250px;
+        height: 250px;
+        @include bordes(2px, solid, $colorOscuro, 0);
+            &:hover{
+                animation: escalar 0.6s;
+                animation-fill-mode: forwards;            
+            }
+    }
+} */
+
 @keyframes escalar {
     from{
         transform: scale(1);
@@ -60,10 +71,12 @@
         font-size: $fontSize;
         text-align: center;
     }
-    a:hover{
-        text-decoration: underline;
-        text-decoration-thickness: 1.5px;
-        color: $colorOscuro;
+    a{
+        &:hover{
+            text-decoration: underline;
+            text-decoration-thickness: 1.5px;
+            color: $colorOscuro;
+        }
     }
 }
 

@@ -34,8 +34,8 @@ body a {
 #arrow img {
   width: 55px;
   position: fixed;
-  top: 620px;
-  right: 55px;
+  top: 610px;
+  right: 80px;
 }
 
 header {
@@ -79,34 +79,6 @@ header ul.navbar-nav {
   border-radius: 7px;
 }
 
-.header__login {
-  padding: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 85px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.header__login a {
-  padding: 3px;
-  background-color: #BBE1FA;
-  color: #1b262c;
-  text-align: center;
-}
-
-.header__login a :hover {
-  padding: 3px;
-  background-color: #1b262c;
-  color: #BBE1FA;
-}
-
 #header__boton {
   margin: 10px 0;
 }
@@ -117,7 +89,7 @@ header ul.navbar-nav {
   font-weight: bold;
   cursor: pointer;
   padding: 3px;
-  width: 25%;
+  width: 30%;
   border: 2px solid #0B2845;
   border-radius: 7px;
 }
@@ -268,6 +240,16 @@ header ul.navbar-nav {
           animation-fill-mode: forwards;
 }
 
+/* .carousel-item.active{
+    img{width: 250px;
+        height: 250px;
+        @include bordes(2px, solid, $colorOscuro, 0);
+            &:hover{
+                animation: escalar 0.6s;
+                animation-fill-mode: forwards;            
+            }
+    }
+} */
 @-webkit-keyframes escalar {
   from {
     -webkit-transform: scale(1);
@@ -278,7 +260,6 @@ header ul.navbar-nav {
             transform: scale(1.2);
   }
 }
-
 @keyframes escalar {
   from {
     -webkit-transform: scale(1);
@@ -343,6 +324,7 @@ header ul.navbar-nav {
 }
 
 .productos__item h3 {
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -554,6 +536,8 @@ header ul.navbar-nav {
 }
 
 form {
+  border: 2px solid #0B2845;
+  border-radius: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,8 +546,6 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #BBE1FAC4;
-  border: 2px solid #0B2845;
-  border-radius: 7px;
   padding: 10px;
 }
 
