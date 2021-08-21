@@ -3,6 +3,10 @@
 	flex-direction: column;
 	margin: 50px auto;
 	text-align: center;
+	p{
+		font-size: 1.5rem;
+		margin: 20px 0;
+	}
 }
 .marcas__titulo {
 	text-align: center;
@@ -10,9 +14,13 @@
 .marcas__logos {
 	display: flex;
 	justify-content: space-around;
-    height: $maxHeight;	
+	margin: 25px 0;
+	a{		
+		width: 40%;
+		height: max-content;
+
+	}
 	img {
-		width: 280px;
 		background-color: $colorClaro;
 		@include bordes(4px, solid, $colorOscuro, 0);
 		padding: 10px;
@@ -33,7 +41,18 @@
 }
 
 @media screen and (max-width:576px) {
-    .marcas__logos{
-        height: $maxHeight*2;
-    }    
+	.marcas{
+		display: flex;
+		flex-direction: column;
+		.marcas__logos{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0 0;
+			a{
+				width: 60%;
+				margin: 20px 0;
+			}
+		}
+	}
 }

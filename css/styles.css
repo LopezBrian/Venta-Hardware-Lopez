@@ -453,6 +453,11 @@ header ul.navbar-nav {
   text-align: center;
 }
 
+.marcas p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
 .marcas__titulo {
   text-align: center;
 }
@@ -463,11 +468,17 @@ header ul.navbar-nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 400px;
+  margin: 25px 0;
+}
+
+.marcas__logos a {
+  width: 40%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 
 .marcas__logos img {
-  width: 280px;
   background-color: #BBE1FAC4;
   border: 4px solid #0B2845;
   border-radius: 0;
@@ -504,8 +515,31 @@ header ul.navbar-nav {
 }
 
 @media screen and (max-width: 576px) {
-  .marcas__logos {
-    height: 800px;
+  .marcas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .marcas .marcas__logos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0;
+  }
+  .marcas .marcas__logos a {
+    width: 60%;
+    margin: 20px 0;
   }
 }
 
